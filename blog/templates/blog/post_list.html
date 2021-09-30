@@ -2,7 +2,6 @@
 
 
     {% block content %}
-        <div class="row">
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
@@ -12,42 +11,7 @@
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
-        </div>
-             
-        <div class="row">
-            {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        <p>published: 14.06.2014, 12:14</p>
-                    </div>
-                    <h2><a href="">My first post</a></h2>
-                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta
-                        gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-                        massa justo sit amet risus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum eum
-                        eveniet distinctio sapiente eius adipisci modi laborum repellendus tempora? Explicabo reprehenderit placeat
-                        aliquid? Obcaecati eos at corrupti expedita doloremque!
-                    </p>
-                </div>
-            {% endfor %}
-        </div>
-    
 
-    
-        <div class="row">
-            {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        <p>published: 14.06.2014, 12:14</p>
-                    </div>                    <h2><a href="">My second post</a></h2>
-                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta
-                        gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f. Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Rerum sequi eius reiciendis aliquam cupiditate quae vero
-                        recusandae doloremque explicabo impedit. Nisi hic aliquam soluta, atque asperiores adipisci corrupti non
-                        accusamus?
-                    </p>
-                </div>
-            {% endfor %}
-        </div> 
     {% endblock %}
 
     
